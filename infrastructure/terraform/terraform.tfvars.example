@@ -1,0 +1,14 @@
+aws_region            = "eu-west-1"
+app_name              = "restaurant-menu"
+db_instance_class     = "db.t3.micro"
+db_allocated_storage  = 20
+db_name               = "restaurant_menu"
+db_username           = "postgres"
+db_password           = "your-secure-password-here"
+container_port        = 3000
+container_image       = "your-account-id.dkr.ecr.eu-west-1.amazonaws.com/restaurant-menu:latest"
+stripe_public_key     = "pk_test_..."
+stripe_secret_key     = "sk_test_..."
+nextauth_secret       = "your-nextauth-secret-here"
+github_id             = "your-github-id"
+github_secret         = "your-github-secret"
