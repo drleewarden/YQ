@@ -1,6 +1,9 @@
 {
-  "buildCommand": "npm ci --legacy-peer-deps && npm run build",
+  "buildCommand": "npm ci --legacy-peer-deps && npm run build && npx prisma migrate deploy --skip-generate",
   "devCommand": "npm run dev",
+  "env": {
+    "PRISMA_DATABASE_URL": "@prisma_database_url"
+  },
   "functions": {
     "app/api/**": {
       "maxDuration": 30,
