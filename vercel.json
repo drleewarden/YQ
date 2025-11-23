@@ -1,9 +1,6 @@
 {
   "buildCommand": "npm ci --legacy-peer-deps && npx prisma generate && npm run build",
   "devCommand": "npm run dev",
-  "env": {
-    "DATABASE_URL": "@database_url"
-  },
   "functions": {
     "app/api/**": {
       "maxDuration": 30,
